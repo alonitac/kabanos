@@ -2,3 +2,6 @@ data/raw/
 scripts/__pycache__/
 *.pyc
 .env
+
+.openai_api_key
+

@@ -49,6 +49,40 @@
       <span id="review-text"></span>
     </div>
 
+    <!-- Edit panel — only visible in ?edit=1 mode served via scripts/serve.py -->
+    <div id="edit-panel" class="edit-panel" hidden>
+      <div class="edit-header">✏️ מצב עריכה</div>
+
+      <div class="edit-clock-row">
+        <span class="edit-clock-label">⏱</span>
+        <span id="edit-clock">0.00</span>
+        <span class="edit-clock-label">שנ׳</span>
+        <button id="btn-mark-start" class="mark-btn">◀ התחלה</button>
+        <button id="btn-mark-end"   class="mark-btn">סוף ▶</button>
+      </div>
+
+      <div class="edit-form-row">
+        <label class="edit-field">
+          <span>שורה #</span>
+          <input id="edit-id"    type="number" min="1" placeholder="ID">
+        </label>
+        <label class="edit-field">
+          <span>התחלה</span>
+          <input id="edit-start" type="number" step="0.01" min="0" placeholder="0.00">
+        </label>
+        <label class="edit-field">
+          <span>סוף</span>
+          <input id="edit-end"   type="number" step="0.01" min="0" placeholder="0.00">
+        </label>
+        <button id="btn-save-line" class="save-btn">💾 שמור</button>
+      </div>
+
+      <div id="edit-status" class="edit-status"></div>
+
+      <!-- Live line list for reference -->
+      <div id="edit-line-list" class="edit-line-list"></div>
+    </div>
+
   </div>
   <script src="app.js"></script>
 </body>

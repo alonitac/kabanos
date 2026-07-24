@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>קבנוס – חזרות</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Selectors -->
+    <div class="selectors">
+      <label class="selector-label">
+        <span>תמונה</span>
+        <select id="scene-select">
+          <option value="">— בחר —</option>
+          <option value="12">12</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+        </select>
+      </label>
+
+      <label class="selector-label">
+        <span>תפקיד</span>
+        <select id="role-select" disabled>
+          <option value="">— בחר —</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Audio player -->
+    <div id="player-wrap" hidden>
+      <audio id="audio" controls preload="metadata"></audio>
+    </div>
+
+    <!-- Cue banner (YOUR_TURN state) -->
+    <div id="cue-banner" class="cue-banner" hidden>
+      <div class="cue-light">🟢</div>
+      <div class="cue-label">תורך!</div>
+      <button id="continue-btn" class="continue-btn">המשך ▶</button>
+    </div>
+
+    <!-- Review strip (RESUMING state) -->
+    <div id="review-strip" class="review-strip" hidden>
+      <span class="review-label">מה שאמרת:</span>
+      <span id="review-text"></span>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

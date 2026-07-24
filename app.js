@@ -139,7 +139,7 @@ continueBtn.addEventListener('click', () => {
   setState(STATES.RESUMING);
 
   // Skip past the recorded line and resume
-  audio.currentTime = line.end;
+  if (line.end !== null) audio.currentTime = line.end;
   audio.play().catch(() => {}); // ignore autoplay policy errors
 
   // Show strip AFTER play() so the play→PLAYING transition doesn't hide it

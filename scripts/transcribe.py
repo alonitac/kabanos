@@ -2,7 +2,6 @@
 """Call OpenAI Whisper API on each scene MP3 and save raw timestamped output."""
 
 import json
-import os
 from pathlib import Path
 from openai import OpenAI
 

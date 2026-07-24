@@ -44,7 +44,6 @@ def parse_transcript(path: Path) -> dict[str, list[tuple[str, str]]]:
     """Returns {scene_id: [(character, text), ...]}  — dialogue lines only."""
     scenes: dict[str, list] = {}
     current_scene = None
-    continuation_buffer = ""  # for multi-part lines split across physical lines
 
     for raw in path.read_text(encoding="utf-8").splitlines():
         line = raw.strip()
@@ -54,7 +53,6 @@ def parse_transcript(path: Path) -> dict[str, list[tuple[str, str]]]:
         if m:
             current_scene = m.group(1)
             scenes[current_scene] = []
-            continuation_buffer = ""
             continue
 
         if current_scene is None:
@@ -62,7 +60,6 @@ def parse_transcript(path: Path) -> dict[str, list[tuple[str, str]]]:
 
         # Stage direction — skip
         if not line or line.startswith(("(", "[", ")")):
-            continuation_buffer = ""
             continue
 
         m = CHAR_LINE_RE.match(line)
@@ -71,11 +68,6 @@ def parse_transcript(path: Path) -> dict[str, list[tuple[str, str]]]:
             char = normalize_char(char)
             text = m.group(2).strip()
             scenes[current_scene].append((char, text))
-            continuation_buffer = char  # remember last speaker for continuation
-        else:
-            # Might be a continuation of previous speaker's text — skip for safety
-            # (these are rare edge cases; user can fix timestamps manually)
-            pass
 
     return scenes
 

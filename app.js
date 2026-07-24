@@ -121,6 +121,8 @@ audio.addEventListener('timeupdate', () => {
       cued.add(line.id);
       clearTimeout(reviewTimer);
       reviewStrip.hidden = true;
+      // Interpolated lines have approximate timestamps — show yellow warning
+      cueBanner.classList.toggle('interpolated', !!line.interpolated);
       setState(STATES.YOUR_TURN);
       break;
     }

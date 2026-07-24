@@ -80,7 +80,10 @@ def normalize_char(name: str) -> str:
 # ── Whisper alignment ─────────────────────────────────────────────────────────
 
 def normalize_hebrew(text: str) -> str:
-    """Strip non-Hebrew characters for fuzzy comparison."""
+    """Strip non-Hebrew characters for fuzzy comparison.
+    Keeping stage-direction Hebrew words in the string deliberately — they add
+    length/specificity that reduces false positives from partial_ratio.
+    """
     return re.sub(r'[^\u05d0-\u05ea]', '', text)
 
 
@@ -119,8 +122,7 @@ def align_scene(
             })
             seg_ptr = best_seg_idx + 1
         else:
-            # Alignment failed — needs manual fix
-            print(f"  \u26a0 No match for [{char}]: '{text[:40]}' (score={best_score})")
+            print(f"  \u26a0 No match for [{char}]: '{text[:45]}' (score={best_score})")
             results.append({
                 "id": idx + 1,
                 "character": char,
@@ -130,6 +132,44 @@ def align_scene(
             })
 
     return results
+
+
+def interpolate_nulls(lines: list[dict], scene_end: float) -> list[dict]:
+    """
+    Fill null-timestamp lines by distributing time evenly between surrounding
+    known anchors. Marks filled entries with "interpolated": true so the user
+    knows to verify them, but the app still uses the values.
+    """
+    n = len(lines)
+    i = 0
+    while i < n:
+        if lines[i]["start"] is not None:
+            i += 1
+            continue
+
+        # Collect contiguous null run [run_lo, run_hi)
+        run_lo = i
+        while i < n and lines[i]["start"] is None:
+            i += 1
+        run_hi = i  # first non-null after the run (or n)
+
+        # Boundary timestamps
+        t_before = lines[run_lo - 1]["end"] if run_lo > 0 else 0.0
+        t_after  = lines[run_hi]["start"] if run_hi < n else scene_end
+        if t_before is None:
+            t_before = 0.0
+        if t_after is None:
+            t_after = scene_end
+
+        run_len = run_hi - run_lo
+        step = (t_after - t_before) / (run_len + 1)  # +1 leaves gap at boundary
+
+        for j, k in enumerate(range(run_lo, run_hi), start=1):
+            lines[k]["start"] = round(t_before + (j - 1) * step, 2)
+            lines[k]["end"]   = round(t_before + j * step, 2)
+            lines[k]["interpolated"] = True
+
+    return lines
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -155,6 +195,10 @@ def main():
         print(f"[{scene}] Aligning {len(lines)} lines against {len(segments)} segments …")
         aligned = align_scene(lines, segments)
 
+        # Fill remaining nulls with interpolated timestamps
+        scene_end = float(segments[-1]["end"]) if segments else 0.0
+        aligned = interpolate_nulls(aligned, scene_end)
+
         characters = list(dict.fromkeys(
             ln["character"] for ln in aligned if ln["character"] != "כולם"
         ))
@@ -167,8 +211,9 @@ def main():
 
         out_path = DATA_DIR / f"scene-{scene}.json"
         out_path.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
-        nulls = sum(1 for ln in aligned if ln["start"] is None)
-        print(f"[{scene}] Saved → {out_path}  ({nulls} lines need manual timestamps)")
+        interp = sum(1 for ln in aligned if ln.get("interpolated"))
+        nulls  = sum(1 for ln in aligned if ln["start"] is None)
+        print(f"[{scene}] Saved → {out_path}  ({interp} interpolated, {nulls} still null)")
 
 
 if __name__ == "__main__":

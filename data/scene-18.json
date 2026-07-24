@@ -66,29 +66,33 @@
       "id": 8,
       "character": "שמעון",
       "text": "סלחו לי גם אתם... אבלים יקרים...",
-      "start": null,
-      "end": null
+      "start": 97.52,
+      "end": 101.69,
+      "interpolated": true
     },
     {
       "id": 9,
       "character": "כרמלה",
       "text": "תתרחק, שטן! מה אתה רוצה?",
-      "start": null,
-      "end": null
+      "start": 101.69,
+      "end": 105.86,
+      "interpolated": true
     },
     {
       "id": 10,
       "character": "שיראל",
       "text": "לייסטר, וואעליה.",
-      "start": null,
-      "end": null
+      "start": 105.86,
+      "end": 110.04,
+      "interpolated": true
     },
     {
       "id": 11,
       "character": "שמעון",
       "text": "נפנפי, נפנפי עלי, אני מת מחום פה עם התכריכים!",
-      "start": null,
-      "end": null
+      "start": 110.04,
+      "end": 114.21,
+      "interpolated": true
     },
     {
       "id": 12,
@@ -101,29 +105,33 @@
       "id": 13,
       "character": "שמעון",
       "text": "חכה רגע, רבנו. אף אחד לא החיה אותי כי בעצם לא הייתי מת. אני לא מעוניין למות, לא למענך, לא למענם, לא למען אף אחד, אני רוצה לחיות!",
-      "start": null,
-      "end": null
+      "start": 119.32,
+      "end": 127.76,
+      "interpolated": true
     },
     {
       "id": 14,
       "character": "אינליאל",
       "text": "סליחה? מה לחיות? זה חיים זה?",
-      "start": null,
-      "end": null
+      "start": 127.76,
+      "end": 136.19,
+      "interpolated": true
     },
     {
       "id": 15,
       "character": "שמעון",
       "text": "חיים,כן, פשוט..",
-      "start": null,
-      "end": null
+      "start": 136.19,
+      "end": 144.63,
+      "interpolated": true
     },
     {
       "id": 16,
       "character": "אינליאל",
       "text": "תסלח לי, אתה חתיכת טינופת!",
-      "start": null,
-      "end": null
+      "start": 144.63,
+      "end": 153.06,
+      "interpolated": true
     },
     {
       "id": 17,
@@ -136,29 +144,33 @@
       "id": 18,
       "character": "דיצה",
       "text": "אתה חתיכת נוכל, פשוט סובבת את כולם על האצבע! חפרת לעצמך קבר, במו ידיך..",
-      "start": null,
-      "end": null
+      "start": 162.4,
+      "end": 165.46,
+      "interpolated": true
     },
     {
       "id": 19,
       "character": "הרב",
       "text": "מי בדיוק ישלם על כל זה? מי?",
-      "start": null,
-      "end": null
+      "start": 165.46,
+      "end": 168.53,
+      "interpolated": true
     },
     {
       "id": 20,
       "character": "שמעון",
       "text": "אני, אני אשלם, אני אחזיר לכם כל מה שהוצאתם.",
-      "start": null,
-      "end": null
+      "start": 168.53,
+      "end": 171.59,
+      "interpolated": true
     },
     {
       "id": 21,
       "character": "דיצה",
       "text": "אתה פחדן עלוב, בנבנישתי!",
-      "start": null,
-      "end": null
+      "start": 171.59,
+      "end": 174.66,
+      "interpolated": true
     },
     {
       "id": 22,
@@ -171,64 +183,73 @@
       "id": 23,
       "character": "מישה",
       "text": "אנשים, חכו רגע, אנשים! גדי, גדי השכן מלמטה –הוא השאיר פתק: \"בנבנישתי צדק. אין טעם לחיים.\"",
-      "start": null,
-      "end": null
+      "start": 179.02,
+      "end": 179.02,
+      "interpolated": true
     },
     {
       "id": 24,
       "character": "שיראל",
       "text": "טוב חלאס, צריך לעצור אותו! די, פה זה שכונה טובה!",
-      "start": null,
-      "end": null
+      "start": 179.02,
+      "end": 179.02,
+      "interpolated": true
     },
     {
       "id": 25,
       "character": "אינליאל",
       "text": "רבותי, יש לנו מנוח חדש! רבנו!... ארון.... פרחים! מישה, צריך לשנות את החתימה על המכתבים לחתימה של גדי! מהר! בעוד שעה נפגשים בבית המנוח! התוכנית ממשיכה בלי שינויים.",
-      "start": null,
-      "end": null
+      "start": 179.02,
+      "end": 179.02,
+      "interpolated": true
     },
     {
       "id": 26,
       "character": "קליאופטרה",
       "text": "לא אינלי, אינלי לב! (מבט)",
-      "start": null,
-      "end": null
+      "start": 179.02,
+      "end": 179.02,
+      "interpolated": true
     },
     {
       "id": 27,
       "character": "לילי",
       "text": "שימי, שימי...",
-      "start": null,
-      "end": null
+      "start": 179.02,
+      "end": 179.02,
+      "interpolated": true
     },
     {
       "id": 28,
       "character": "שמעון",
       "text": "כן, לילי. לילי שלי  [רוקדים, מגיעה למגש]",
-      "start": null,
-      "end": null
+      "start": 179.02,
+      "end": 179.02,
+      "interpolated": true
     },
     {
       "id": 29,
       "character": "לילי",
       "text": "שימי, איך אתה רוצה את הקבנוס , על לחם שחור או לבן?",
-      "start": null,
-      "end": null
+      "start": 179.02,
+      "end": 179.02,
+      "interpolated": true
     },
     {
       "id": 30,
       "character": "שמעון",
       "text": "לבן, לילי, לבן. אם כבר חיים אז נחייה אותם עד הסוף",
-      "start": null,
-      "end": null
+      "start": 179.02,
+      "end": 179.02,
+      "interpolated": true
     },
     {
       "id": 31,
       "character": "לילי",
       "text": "שימי?",
-      "start": null,
-      "end": null
+      "start": 179.02,
+      "end": 179.02,
+      "interpolated": true
     }
   ]
 }

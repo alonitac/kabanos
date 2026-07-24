@@ -69,8 +69,9 @@
       "id": 9,
       "character": "לילי",
       "text": "מיאמי... ובלגרד.",
-      "start": null,
-      "end": null
+      "start": 19.38,
+      "end": 25.27,
+      "interpolated": true
     },
     {
       "id": 10,
@@ -83,8 +84,9 @@
       "id": 11,
       "character": "לילי",
       "text": "ליסבון, קופנגן, טורונטו ו..ערד.",
-      "start": null,
-      "end": null
+      "start": 32.66,
+      "end": 38.65,
+      "interpolated": true
     },
     {
       "id": 12,
@@ -97,8 +99,9 @@
       "id": 13,
       "character": "לילי",
       "text": "זאת אני, אבל כבוד הרב... הוא חי!",
-      "start": null,
-      "end": null
+      "start": 46.64,
+      "end": 57.16,
+      "interpolated": true
     },
     {
       "id": 14,
@@ -139,85 +142,97 @@
       "id": 19,
       "character": "מישה",
       "text": "נו, זו תופעה ידועה, זה בגלל שהן לא ציפו, אני עצמי קברתי את אשתי לא מזמן. לא הצלחתי לישון בלילה. תשאלי אפילו את מרגריטה, היא עדה.",
-      "start": null,
-      "end": null
+      "start": 113.62,
+      "end": 113.63,
+      "interpolated": true
     },
     {
       "id": 20,
       "character": "שיראל",
       "text": "אני כשכנה גם עדה, שמעתי היטב .",
-      "start": null,
-      "end": null
+      "start": 113.63,
+      "end": 113.64,
+      "interpolated": true
     },
     {
       "id": 21,
       "character": "מישה",
       "text": "טוב, אם זה המצב, כשכן, אני הכי קרוב אליו... למדתי זה באולפן יִתְגַּדַּל וְיִתְקַדַּשׁ שמי ר....",
-      "start": null,
-      "end": null
+      "start": 113.64,
+      "end": 113.64,
+      "interpolated": true
     },
     {
       "id": 22,
       "character": "לילי",
       "text": "מישה!",
-      "start": null,
-      "end": null
+      "start": 113.64,
+      "end": 113.65,
+      "interpolated": true
     },
     {
       "id": 23,
       "character": "אינליאל",
       "text": "רגע, רגע! בן אדם כמו שימי אי אפשר לקבור ככה, בתכריכים, כמו חתול.",
-      "start": null,
-      "end": null
+      "start": 113.65,
+      "end": 113.66,
+      "interpolated": true
     },
     {
       "id": 24,
       "character": "הרב",
       "text": "מה אתה רוצה שנעשה אתו בדיוק?",
-      "start": null,
-      "end": null
+      "start": 113.66,
+      "end": 113.67,
+      "interpolated": true
     },
     {
       "id": 25,
       "character": "אינליאל",
       "text": "שמעון צריך להקבר בארוןֿ, טקס חילוני, תרבותי, עם טקסט מכבד, משהו של ביאליק.",
-      "start": null,
-      "end": null
+      "start": 113.67,
+      "end": 113.67,
+      "interpolated": true
     },
     {
       "id": 26,
       "character": "הרב",
       "text": "חס ושלום, כופר בן כופר, שיהודי יקבר בארון?!",
-      "start": null,
-      "end": null
+      "start": 113.67,
+      "end": 113.68,
+      "interpolated": true
     },
     {
       "id": 27,
       "character": "אינליאל",
       "text": "זה מה שהמנוח היה רוצה! הוא היה אדם מתקדם! אתאיסט ואיש תרבות!",
-      "start": null,
-      "end": null
+      "start": 113.68,
+      "end": 113.69,
+      "interpolated": true
     },
     {
       "id": 28,
       "character": "הרב",
       "text": "על מי ששם ידו בנפשו לא אומרים קדיש, ולא שיר של ביאליק ולא שום דבר!",
-      "start": null,
-      "end": null
+      "start": 113.69,
+      "end": 113.7,
+      "interpolated": true
     },
     {
       "id": 29,
       "character": "אינליאל",
       "text": "פרימיטיב.",
-      "start": null,
-      "end": null
+      "start": 113.7,
+      "end": 113.7,
+      "interpolated": true
     },
     {
       "id": 30,
       "character": "הרב",
       "text": "קוקסינל...",
-      "start": null,
-      "end": null
+      "start": 113.7,
+      "end": 113.71,
+      "interpolated": true
     },
     {
       "id": 31,
@@ -230,29 +245,33 @@
       "id": 32,
       "character": "הרב",
       "text": "מה לעשות, זאת ההלכה.",
-      "start": null,
-      "end": null
+      "start": 115.22,
+      "end": 115.22,
+      "interpolated": true
     },
     {
       "id": 33,
       "character": "שרה",
       "text": "פרחחים, עצרו!",
-      "start": null,
-      "end": null
+      "start": 115.22,
+      "end": 115.22,
+      "interpolated": true
     },
     {
       "id": 34,
       "character": "מישה",
       "text": "פיזדייץ",
-      "start": null,
-      "end": null
+      "start": 115.22,
+      "end": 115.22,
+      "interpolated": true
     },
     {
       "id": 35,
       "character": "שיראל",
       "text": "תפסיקו, זה כתם על היוקרה של הבניין!",
-      "start": null,
-      "end": null
+      "start": 115.22,
+      "end": 115.22,
+      "interpolated": true
     }
   ]
 }

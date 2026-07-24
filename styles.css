@@ -102,6 +102,22 @@ audio { width: 100%; border-radius: 8px; }
 .continue-btn:hover { background: #27ae60; }
 .continue-btn:active { background: #1e8449; }
 
+/* Interpolated cue (approximate timing) — yellow instead of green */
+.cue-banner.interpolated {
+  background: #3d3500;
+  border-color: #f0c040;
+  animation: pulse-border-yellow 1.2s ease-in-out infinite;
+}
+.cue-banner.interpolated .cue-light::after { content: ' ⚠️'; font-size: 1.8rem; }
+.cue-banner.interpolated .cue-label { color: #f0c040; }
+.cue-banner.interpolated .continue-btn { background: #f0c040; }
+.cue-banner.interpolated .continue-btn:hover { background: #d4a800; }
+
+@keyframes pulse-border-yellow {
+  0%, 100% { border-color: #f0c040; box-shadow: 0 0 0 0 rgba(240,192,64,0.4); }
+  50%       { border-color: #ffe066; box-shadow: 0 0 0 8px rgba(240,192,64,0); }
+}
+
 /* Review strip */
 .review-strip {
   background: #1c1c3a;

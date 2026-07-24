@@ -48,7 +48,7 @@
     },
     {
       "id": 6,
-      "character": "מישה",
+      "character": "דיצה",
       "text": "אלמן, שוקל את כל האופציות.",
       "start": 13.58,
       "end": 15.64
@@ -64,8 +64,9 @@
       "id": 8,
       "character": "דיצה",
       "text": "צצצ. מחכים.",
-      "start": null,
-      "end": null
+      "start": 18.24,
+      "end": 18.98,
+      "interpolated": true
     },
     {
       "id": 9,
@@ -344,8 +345,9 @@
       "id": 48,
       "character": "הרב",
       "text": "צדיק, צדיק! .",
-      "start": null,
-      "end": null
+      "start": 272.68,
+      "end": 273.09,
+      "interpolated": true
     },
     {
       "id": 49,
@@ -358,15 +360,17 @@
       "id": 50,
       "character": "אינליאל",
       "text": "שמשון!",
-      "start": null,
-      "end": null
+      "start": 275.48,
+      "end": 283.38,
+      "interpolated": true
     },
     {
       "id": 51,
       "character": "דיצה",
       "text": "גיבור, גיבור!",
-      "start": null,
-      "end": null
+      "start": 283.38,
+      "end": 291.28,
+      "interpolated": true
     },
     {
       "id": 52,
@@ -400,120 +404,137 @@
       "id": 56,
       "character": "שמעון",
       "text": "מחר?",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 57,
       "character": "שיראל",
       "text": "כן, סיכמנו שהוא דוחה למחר. כפרעליו, אחרי שהצלמת רחפן תצלם את ליאן- טיפאני מתעוררת וראג׳ יסיים לשאוב את הקונפטי זה אפשרי.",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 58,
       "character": "הרב",
       "text": "רוצים לארגן את הלוויה כדת וכדין.",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 59,
       "character": "דיצה",
       "text": "נעטוף אותך בדגל ישראל, מטח כבוד, כמו שצריך.",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 60,
       "character": "אינליאל",
       "text": "מחר בעשר, אתה פנוי?",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 61,
       "character": "שמעון",
       "text": "מחר בעשר? אמרת שתים-עשרה...",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 62,
       "character": "אינליאל",
       "text": "לא, בעשר אנחנו עם מסיבת הפרידה, בשתים עשרה – אתה, עם ה... ובשתים – לוויה.",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 63,
       "character": "שיראל",
       "text": "אל תדאג אני לא אבוא בידיים ריקות, נביא טארטלטים שתיים שלוש מגש, את הבליני שישאר, 4-5 ארגז,  וקלמארים.",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 64,
       "character": "הרב",
       "text": "השם ישמור, טרפה...",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 65,
       "character": "כרמלה",
       "text": "אני אביא קמבוצ׳ה בקערה טיבטית.",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 66,
       "character": "מישה",
       "text": "יש עוד הזמנות מיוחדות?",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 67,
       "character": "שמעון",
       "text": "עראק אשכוליות",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 68,
       "character": "אינליאל",
       "text": "סגור. מחר בעשר מתחילים את מסיבת הלוויה, ובשעה שתים עשרה בדיוק אתה יוצא לדרך.",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 69,
       "character": "שמעון",
       "text": "לאן?",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 70,
       "character": "אינליאל",
       "text": "אל האלמוות! אנחנו נבוא לאסוף אותך.",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 71,
       "character": "כולם",
       "text": "להתראות,ש-לום,  שימי, תהיי בריא, שמור על עצמך, שבוע טוב, שבת שלום, חג שמח. (יוצאים).",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     },
     {
       "id": 72,
       "character": "שמעון",
       "text": "מחר בשתים עשרה בדיוק. אם בשתים עשרה בדיוק, אז מה יהיה אתי בשתים עשרה וחצי? אפילו בשתים עשרה וחמש דקות? לא מבין שום דבר. תיק – אני עדיין עם עצמי ועם אשתי, ועם השמש ועם האוויר. תק- אני בלעדיי – זה אני לא מבין בכלל.  מחר, בשתים עשרה.",
-      "start": null,
-      "end": null
+      "start": 367.08,
+      "end": 367.08,
+      "interpolated": true
     }
   ]
 }

@@ -402,8 +402,9 @@
       "id": 56,
       "character": "אינליאל",
       "text": "חולשה לאלמנות.",
-      "start": null,
-      "end": null
+      "start": 303.52,
+      "end": 316.85,
+      "interpolated": true
     },
     {
       "id": 57,
@@ -416,15 +417,17 @@
       "id": 58,
       "character": "ברונו",
       "text": "צולם.",
-      "start": null,
-      "end": null
+      "start": 332.22,
+      "end": 335.31,
+      "interpolated": true
     },
     {
       "id": 59,
       "character": "שרה",
       "text": "לא מבינה כלום, איפה הוא?",
-      "start": null,
-      "end": null
+      "start": 335.31,
+      "end": 338.39,
+      "interpolated": true
     },
     {
       "id": 60,
@@ -437,8 +440,9 @@
       "id": 61,
       "character": "שרה",
       "text": "איזה יחס, ראית? יש עדיין אנשים טובים בעולם.",
-      "start": null,
-      "end": null
+      "start": 342.1,
+      "end": 342.32,
+      "interpolated": true
     },
     {
       "id": 62,
@@ -493,8 +497,9 @@
       "id": 69,
       "character": "שרה",
       "text": "שמעון!",
-      "start": null,
-      "end": null
+      "start": 439.32,
+      "end": 444.29,
+      "interpolated": true
     },
     {
       "id": 70,
@@ -507,8 +512,9 @@
       "id": 71,
       "character": "לילי",
       "text": "זאת אני, לילי...",
-      "start": null,
-      "end": null
+      "start": 450.9,
+      "end": 465.57,
+      "interpolated": true
     },
     {
       "id": 72,
@@ -521,15 +527,17 @@
       "id": 73,
       "character": "לילי",
       "text": "הנה גם שרה פה...",
-      "start": null,
-      "end": null
+      "start": 480.76,
+      "end": 482.99,
+      "interpolated": true
     },
     {
       "id": 74,
       "character": "שמעון",
       "text": "שרה אמנו.איפה רחל ורבקה?",
-      "start": null,
-      "end": null
+      "start": 482.99,
+      "end": 485.23,
+      "interpolated": true
     },
     {
       "id": 75,
@@ -542,22 +550,25 @@
       "id": 76,
       "character": "שמעון",
       "text": "אני מבקשת למחול לי על כל החטאים, אני לא אשמה.",
-      "start": null,
-      "end": null
+      "start": 488.9,
+      "end": 491.62,
+      "interpolated": true
     },
     {
       "id": 77,
       "character": "לילי",
       "text": "מה זה \"לא אשמה\"?",
-      "start": null,
-      "end": null
+      "start": 491.62,
+      "end": 494.34,
+      "interpolated": true
     },
     {
       "id": 78,
       "character": "שמעון",
       "text": "אלוהים? אדון עולם אשר יצר, אני מבקשת מחילה, לא זיהיתי אותך. נעים מאוד, הנשמה של בנבנישתי.",
-      "start": null,
-      "end": null
+      "start": 494.34,
+      "end": 497.06,
+      "interpolated": true
     },
     {
       "id": 79,
@@ -591,8 +602,9 @@
       "id": 83,
       "character": "שמעון",
       "text": "אבינו שבשמיים...",
-      "start": null,
-      "end": null
+      "start": 545.96,
+      "end": 550.39,
+      "interpolated": true
     },
     {
       "id": 84,
@@ -612,36 +624,41 @@
       "id": 86,
       "character": "לילי",
       "text": "זה טירוף. (רוכנת אליו) שימי, אהוב שלי!",
-      "start": null,
-      "end": null
+      "start": 559.18,
+      "end": 560.3,
+      "interpolated": true
     },
     {
       "id": 87,
       "character": "שרה",
       "text": "כן, טירוף, תריחי אותו! איזה שלוליות ליקקת, שמעון? אתה לא מתבייש?",
-      "start": null,
-      "end": null
+      "start": 560.3,
+      "end": 561.41,
+      "interpolated": true
     },
     {
       "id": 88,
       "character": "לילי",
       "text": "כותב מכתב שאתה עומד להתאבד, ובמקום זה הולך לדפוק את הראש? אתה פשוט... אני פה גמורה..",
-      "start": null,
-      "end": null
+      "start": 561.41,
+      "end": 562.53,
+      "interpolated": true
     },
     {
       "id": 89,
       "character": "שרה",
       "text": "הדור שלכם גמור, גמור!",
-      "start": null,
-      "end": null
+      "start": 562.53,
+      "end": 563.65,
+      "interpolated": true
     },
     {
       "id": 90,
       "character": "לילי",
       "text": "אני פה מתאבלת, עומדת למות בעצמי מרוב עצב, ואתה בכלל לא מת, שותה חוגג, וחוזר הביתה מסריח כמו...",
-      "start": null,
-      "end": null
+      "start": 563.65,
+      "end": 564.76,
+      "interpolated": true
     },
     {
       "id": 91,
@@ -654,190 +671,217 @@
       "id": 92,
       "character": "שמעון",
       "text": "זה כבר העולם הבא או עדיין הקודם?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 93,
       "character": "שרה",
       "text": "הקודם, הקודם...",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 94,
       "character": "שמעון",
       "text": "רגע! מה השעה?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 95,
       "character": "לילי",
       "text": "השעה שתיים, שימי.",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 96,
       "character": "שמעון",
       "text": "שתיים. איך זה קרה? אלוהים! בשתים עשרה אני צריך... בשתים עשרה, לילי! רגע! מתי חזרתי הביתה?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 97,
       "character": "שרה",
       "text": "לא חזרת, הוחזרת. סחבו אותך לפה.",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 98,
       "character": "שמעון",
       "text": "סחבו.. מי סחב?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 99,
       "character": "שרה",
       "text": "שני רעולי פנים, אני יודעת מי זה...",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 100,
       "character": "שמעון",
       "text": "שני רעולי פנים... באמת... היה איזה משהו.. הייתי ברחוב.. פתאום הם התיישבו ו... ישר מהבקבוק.... שתיתי בשביל שיהיה לי אומץ, בשביל האומץ שתיתי ושתיתי. ועם הבקבוק האחרון הלכתי מאחורי עץ, חשבתי לשתות עוד לגימה ולירות. לשתות – שתיתי, אבל לירות – לא יריתי.",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 101,
       "character": "לילי",
       "text": "בשביל מה היית צריך כל הקומדיה הזאת?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 102,
       "character": "שמעון",
       "text": "מה, היו פה אורחים?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 103,
       "character": "שרה",
       "text": "היו כמה, האמנות הישראלית, הדת היהודית, צה\"ל... נשאו דברים, נאמו נאומים... הביעו תנחומים.",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 104,
       "character": "לילי",
       "text": "בעלך מת כגיבור, כל ההוצאות עלינו, עליהם! שימי..(מבנה) צריך לברוח, אמא! חייבים איכשהו לגרום להם שלא יגיעו לפה,",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 105,
       "character": "שרה",
       "text": "ולהחזיר את השמלות",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 106,
       "character": "לילי",
       "text": "צריך לברוח!",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 107,
       "character": "שמעון",
       "text": "חכו רגע, לא הכל אבוד. אני עוד יכול להתאבד.",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 108,
       "character": "שרה",
       "text": "שמעון, די , תחליף בגדים.",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 109,
       "character": "לילי",
       "text": "שימי מה קרה?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 110,
       "character": "שמעון",
       "text": "שתיתי.. כמה שתיתי... חיזקתי את הכנפיים, אמרתי לעצמי, תירה כבר, חתיכת אפס, תירה. תשחיל כדור, נבלה, תשחיל! לא יכול! אלוהים! תן לי כוח , אתה רואה שאני לא מצליח! אני לא יכול לבד, תלחץ במקומי...  בטח למוצרט היה קל למות, כי הוא ידע שאחרי המוות שלו תשאר המוסיקה וכל מי שנשאר חי יוכל להאזין לה. ומה אתי? למה לא יצרתי כלום, אלוהים? כל כך הרבה זמן פנוי היה לי!",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 111,
       "character": "לילי",
       "text": "(יוצאת וחוזרת/ חלון) הם באים. שימי.",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 112,
       "character": "שמעון",
       "text": "מי זה בא?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 113,
       "character": "לילי",
       "text": "כולם באים! מאות, אלפי אנשים...",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 114,
       "character": "שרה",
       "text": "אנשי הרוח, האמנות, השיווק, האהבה... מה להגיד להם?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 115,
       "character": "שמעון",
       "text": "שאני לא נמצא. לכי תגידי להם שאני לא יכול עכשיו, לילי!",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 116,
       "character": "לילי",
       "text": "מה להגיד להם?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 117,
       "character": "שמעון",
       "text": "תגידי שאני עסוק. (מתעטף בתכריכים) אין לי זמן לדיבורים... תגידי שאני מת.",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     },
     {
       "id": 118,
       "character": "שרה",
       "text": "מה נעשה, מה נעשה?",
-      "start": null,
-      "end": null
+      "start": 567.26,
+      "end": 567.26,
+      "interpolated": true
     }
   ]
 }

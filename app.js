@@ -22,14 +22,14 @@ const reviewText   = document.getElementById('review-text');
 // ── Helpers ────────────────────────────────────────────────────────────────
 function setState(next) {
   state = next;
-  cueBanner.hidden  = (next !== STATES.YOUR_TURN);
-  reviewStrip.hidden = (next !== STATES.RESUMING);
+  cueBanner.hidden = (next !== STATES.YOUR_TURN);
 }
 
 function resetSession() {
   cued.clear();
   activeCue = null;
   clearTimeout(reviewTimer);
+  reviewStrip.hidden = true;
   setState(STATES.IDLE);
 }
 
@@ -117,11 +117,10 @@ audio.addEventListener('timeupdate', () => {
 
     if (t >= line.start - LOOKAHEAD) {
       audio.pause();
-      // Snap to exact cue start so skip lands right
-      audio.currentTime = line.start;
       activeCue = line;
       cued.add(line.id);
       clearTimeout(reviewTimer);
+      reviewStrip.hidden = true;
       setState(STATES.YOUR_TURN);
       break;
     }
@@ -142,6 +141,9 @@ continueBtn.addEventListener('click', () => {
   // Skip past the recorded line and resume
   audio.currentTime = line.end;
   audio.play().catch(() => {}); // ignore autoplay policy errors
+
+  // Show strip AFTER play() so the play→PLAYING transition doesn't hide it
+  reviewStrip.hidden = false;
 
   // Auto-hide review strip after 4 seconds
   clearTimeout(reviewTimer);

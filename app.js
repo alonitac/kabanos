@@ -8,6 +8,7 @@ let selectedRole = null;    // string character name
 let cued = new Set();       // line IDs already triggered this session
 let activeCue = null;       // current line being cued
 let reviewTimer = null;
+let programmaticSeek = false; // true while we move the playhead ourselves
 
 // ── DOM refs ───────────────────────────────────────────────────────────────
 const sceneSelect  = document.getElementById('scene-select');
@@ -16,6 +17,7 @@ const playerWrap   = document.getElementById('player-wrap');
 const audio        = document.getElementById('audio');
 const reviewStrip  = document.getElementById('review-strip');
 const reviewText   = document.getElementById('review-text');
+const instantToggle = document.getElementById('instant-text-toggle');
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 function setState(next) {
@@ -25,6 +27,7 @@ function setState(next) {
 function resetSession() {
   cued.clear();
   activeCue = null;
+  programmaticSeek = false;
   clearTimeout(reviewTimer);
   reviewStrip.hidden = true;
   setState(STATES.IDLE);
@@ -82,7 +85,10 @@ roleSelect.addEventListener('change', () => {
 audio.addEventListener('play', () => {
   if (state === STATES.YOUR_TURN) {
     // Skip past the recorded version of the actor's line
-    if (activeCue && activeCue.end !== null) audio.currentTime = activeCue.end;
+    if (activeCue && activeCue.end !== null && Math.abs(audio.currentTime - activeCue.end) > 0.01) {
+      programmaticSeek = true;
+      audio.currentTime = activeCue.end;
+    }
     reviewText.textContent = activeCue ? activeCue.text : '';
     activeCue = null;
     reviewStrip.hidden = false;
@@ -106,6 +112,24 @@ audio.addEventListener('pause', () => {
 // ── Cue detection ──────────────────────────────────────────────────────────
 const LOOKAHEAD = 0.15; // seconds — pause slightly before the line starts
 
+function isActorLine(line) {
+  return line.character === selectedRole || line.character === 'כולם';
+}
+
+function cueLine(line) {
+  audio.pause();
+  activeCue = line;
+  cued.add(line.id);
+  clearTimeout(reviewTimer);
+  if (instantToggle.checked) {
+    reviewText.textContent = line.text;
+    reviewStrip.hidden = false;
+  } else {
+    reviewStrip.hidden = true;
+  }
+  setState(STATES.YOUR_TURN);
+}
+
 audio.addEventListener('timeupdate', () => {
   if (state !== STATES.PLAYING || !sceneData || !selectedRole) return;
 
@@ -114,19 +138,51 @@ audio.addEventListener('timeupdate', () => {
   for (const line of sceneData.lines) {
     if (cued.has(line.id)) continue;
     if (line.start === null) continue;
-
-    const isActorLine = (line.character === selectedRole || line.character === 'כולם');
-    if (!isActorLine) continue;
+    if (!isActorLine(line)) continue;
 
     if (t >= line.start - LOOKAHEAD) {
-      audio.pause();
-      activeCue = line;
-      cued.add(line.id);
-      clearTimeout(reviewTimer);
-      reviewStrip.hidden = true;
-      setState(STATES.YOUR_TURN);
+      cueLine(line);
       break;
     }
+  }
+});
+
+// ── Seeking ────────────────────────────────────────────────────────────────
+// A manual jump invalidates the "already cued" bookkeeping: lines after the new
+// position must be able to fire again, otherwise the recorded actor's voice is
+// played back instead of being paused for.
+audio.addEventListener('seeked', () => {
+  if (programmaticSeek) {
+    programmaticSeek = false;
+    return;
+  }
+  if (!sceneData) return;
+
+  const t = audio.currentTime;
+  cued = new Set(
+    sceneData.lines
+      .filter(line => line.start !== null && (line.end ?? line.start) <= t)
+      .map(line => line.id)
+  );
+
+  clearTimeout(reviewTimer);
+  reviewStrip.hidden = true;
+  activeCue = null;
+
+  // Landing inside (or just before) one of the actor's own lines is a cue right
+  // away — no need to wait for the next timeupdate tick to notice it.
+  const landed = selectedRole && sceneData.lines.find(line =>
+    line.start !== null &&
+    isActorLine(line) &&
+    t >= line.start - LOOKAHEAD &&
+    (line.end === null || t < line.end)
+  );
+
+  if (landed) {
+    cueLine(landed);
+  } else if (state === STATES.YOUR_TURN) {
+    // The cue we were waiting on is no longer where the playhead is
+    setState(STATES.IDLE);
   }
 });
 
